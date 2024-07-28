@@ -1,0 +1,262 @@
+{
+	"info": {
+		"_postman_id": "856eb068-c701-4339-9d0a-4bd9caee62e6",
+		"name": "Prueba",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "6410316"
+	},
+	"item": [
+		{
+			"name": "agronomic_activity",
+			"item": [
+				{
+					"name": "/v1/agronomic_activity",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/v1/agronomic_activity",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"v1",
+								"agronomic_activity"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/v1/agronomic_activity/{id}",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/v1/agronomic_activity/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"v1",
+								"agronomic_activity",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/v1/agronomic_activity",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"date\": \"27/7/2024, 17:43:39\",\n    \"activity_type\": \"Riego con fertilizante\",\n    \"supply\": \"prueba\",\n    \"duration\": \"2 horas\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/v1/agronomic_activity",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"v1",
+								"agronomic_activity"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/v1/agronomic_activity/{id}",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 1,\n    \"date\": \"27/7/2024, 17:43:39\",\n    \"activity_type\": \"Riego con fertilizante\",\n    \"supply\": \"prueba\",\n    \"duration\": \"2 horas\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/v1/agronomic_activity/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"v1",
+								"agronomic_activity",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/v1/agronomic_activity/{id}",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/v1/agronomic_activity/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"v1",
+								"agronomic_activity",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "farm_plot",
+			"item": [
+				{
+					"name": "/v1/farm_plot",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/v1/farm_plot",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"v1",
+								"farm_plot"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/v1/farm_plot/{id}",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/v1/farm_plot/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"v1",
+								"farm_plot",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/v1/farm_plot",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Parcela uno\",\n    \"latitude\": 3.5289436,\n    \"longitude\": -76.3058215,\n    \"size_in_sqm\": 1000,\n    \"crop_type\": \"Maiz\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/v1/farm_plot",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"v1",
+								"farm_plot"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/v1/farm_plot/{id}",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 1,\n    \"name\": \"Parcela uno\",\n    \"latitude\": 3.5289436,\n    \"longitude\": -76.3058215,\n    \"size_in_sqm\": 1000,\n    \"crop_type\": \"Maiz\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/v1/farm_plot/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"v1",
+								"farm_plot",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/v1/agronomic_activity/{id}",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/v1/agronomic_activity/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"v1",
+								"agronomic_activity",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
